@@ -14,7 +14,7 @@ class Controler {
 
   getLinks() {
     return new Promise((resolve, reject) => {
-      fetch("episodes2.json")
+      fetch("bin/episodes.json")
 
         .then((response) => response.json())
         .then((el) => {
