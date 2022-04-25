@@ -54,11 +54,7 @@ class Controler {
 
   loadEpisode() {
     document.querySelector("#episodeTitle").innerHTML =
-      this.getCurrentEpisode()["name"] +
-      " s:" +
-      this.season +
-      " e:" +
-      this.episode;
+      this.getCurrentEpisode()["name"]
     this.player.setURL(this.getCurrentEpisode()["url"]);
     this.player.setIntroTime(this.getCurrentEpisode()["intro"]);
 
